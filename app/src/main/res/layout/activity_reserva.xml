@@ -1,0 +1,131 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/fondo2">
+
+    <TextView
+        android:id="@+id/textViewReservaTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reservalcanchas"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/textViewNombreCancha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.827" />
+
+    <TextView
+        android:id="@+id/textViewNombreCancha"
+        android:layout_width="344dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="88dp"
+        android:gravity="center"
+        android:text="Nombre de la Cancha"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewReservaTitulo" />
+
+    <TextView
+        android:id="@+id/textViewFechaTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Fecha:"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewNombreCancha" />
+
+    <EditText
+        android:id="@+id/editTextFecha"
+        android:layout_width="344dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="4dp"
+
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:hint="Fecha de reserva"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewFechaTitulo" />
+
+    <TextView
+        android:id="@+id/textViewHorarioTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Horario:"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextFecha" />
+
+    <Spinner
+        android:id="@+id/spinnerHorario"
+        android:layout_width="349dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/white"
+        android:entries="@array/horarios"
+        android:gravity="center"
+        android:prompt="@string/seleccionar_horario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewHorarioTitulo" />
+
+    <TextView
+        android:id="@+id/textViewMetodoPagoTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Método de Pago:"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerHorario" />
+
+    <Spinner
+        android:id="@+id/spinnerMetodoPago"
+        android:layout_width="353dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:entries="@array/metodos_pago"
+        android:gravity="center"
+        android:prompt="@string/seleccionar_metodo_pago"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewMetodoPagoTitulo" />
+
+    <Button
+        android:id="@+id/btnRealizarReserva"
+        style="@style/AppTheme.Button"
+        android:layout_width="252dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        android:text="Realizar Reserva"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerMetodoPago"
+        app:layout_constraintVertical_bias="0.335" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

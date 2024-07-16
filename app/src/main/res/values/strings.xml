@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Canchas !Ya!</string>
+    <string name="prompt_especialistas">Seleccione un Especialista</string>
+    <string name="prompt_pacientes">Seleccione un Paciente</string>
+
+    <string name="usuario">Ingresar C@rreo/Usuario</string>
+    <string name="contrase_a">********</string>
+    <string name="iniciar_sesi_n">Iniciar Sesión</string>
+    <string name="TexBienvenida">! CANCHAYA ¡</string>
+    <string name="reserva">Reserva</string>
+    <string name="perfil">Perfil</string>
+    <string name="tienda">Tienda</string>
+    <string name="carrito">Carrito</string>
+    <string name="Regsitro">¿No tienes cuenta? Registrate</string>
+    <string name="bienvenida">BIENVENIDO BASQUETBOLISTA</string>
+    <string name="titulo">Lista de Canchas Reservadas</string>
+    <!-- Para el Spinner de horarios -->
+    <string name="seleccionar_horario">Seleccionar horario</string>
+
+    <!-- Para el Spinner de métodos de pago -->
+    <string name="seleccionar_metodo_pago">Seleccionar método de pago</string>
+    <string name="reservalcanchas">RESERVA DE CANCHAS</string>
+</resources>
+

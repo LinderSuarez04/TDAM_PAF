@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorText">#4CAF50</color>
+    <color name="colorBlanco">#FFFFFF</color>
+    <!-- Colores para el botón -->
+    <color name="colorButtonBackground">#2196F3</color>
+    <color name="colorButtonText">#FFFFFF</color>
+    <color name="colorEditTextBorder">#3F51B5</color>
+
+    <color name="colorEditTextBackground">#EDEDED</color>
+
+
+
+
+    <color name="colorBottomNavigationBackground">#FFFFFF</color> <!-- Cambia este color al que desees -->
+    <color name="colorBottomNavigationText">#000000</color> <!-- Cambia este color al que desees -->
+</resources>

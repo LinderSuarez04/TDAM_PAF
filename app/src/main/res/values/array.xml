@@ -1,0 +1,19 @@
+<resources>
+    <!-- Array de horarios -->
+    <array name="horarios">
+        <item>8:00 AM - 9:00 AM</item>
+        <item>9:00 AM - 10:00 AM</item>
+        <item>10:00 AM - 11:00 AM</item>
+        <item>11:00 AM - 12:00 PM</item>
+        <item>12:00 PM - 1:00 PM</item>
+        <item>1:00 PM - 2:00 PM</item>
+        <item>2:00 PM - 3:00 PM</item>
+    </array>
+
+
+    <array name="metodos_pago">
+        <item>Efectivo</item>
+        <item>Yape</item>
+        <item>Plin</item>
+    </array>
+</resources>

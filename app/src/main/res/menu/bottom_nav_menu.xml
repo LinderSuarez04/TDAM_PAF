@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_perfil"
+        android:title="@string/perfil"
+        android:icon="@drawable/user"/>
+    <item
+        android:id="@+id/menu_reserva"
+        android:title="@string/reserva"
+        android:icon="@drawable/reserva"/>
+    <item
+        android:id="@+id/menu_tienda"
+        android:title="@string/tienda"
+        android:icon="@drawable/ic_tiendaa" />
+    <item
+        android:id="@+id/menu_carrito"
+        android:title="@string/carrito"
+        android:icon="@drawable/tienda" />
+</menu>

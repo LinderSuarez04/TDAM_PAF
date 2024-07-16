@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="buttonStyle">@style/AppTheme.Button</item>
+    </style>
+
+    <!-- Toolbar style -->
+    <style name="AppTheme.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:titleTextAppearance">@style/AppTheme.Toolbar.TitleText</item>
+    </style>
+
+    <!-- Toolbar title text style -->
+    <style name="AppTheme.Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/colorBackground</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Button style -->
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button">
+        <item name="android:background">#3F51B5</item>
+        <item name="android:textColor">@color/colorButtonText</item>
+
+    </style>
+
+    <!-- EditText style -->
+    <style name="AppTheme.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@color/colorBackground</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="BottomNavigationViewTheme" parent="Widget.Design.BottomNavigationView">
+        <item name="android:background">#2196F3</item>
+    </style>
+
+    <!-- Configuración del texto del BottomNavigationView -->
+    <style name="BottomNavigationViewText" parent="Widget.Design.BottomNavigationView">
+
+    </style>
+
+
+
+</resources>
