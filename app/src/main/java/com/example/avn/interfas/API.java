@@ -21,27 +21,30 @@ import retrofit2.http.Path;
 public interface API {
 
 
+
     @POST("/auth")
     Call<AuthResponse> obtenerToken(@Body AuthRequest authRequest);
 
-    @GET("/obtener_canchas")
+    @GET("/api/v1/canchas")
     Call<List<Cancha>> obtenerCanchas(@Header("Authorization") String token);
 
-    @POST("/crear_reserva")
+    @POST("/api/v1/reservas")
     Call<Void> guardarReserva(@Header("Authorization") String token, @Body Reserva reserva);
 
-    @GET("/obtener_reservas_por_usuario/{usuario_id}")
+    //@GET("/api/v1/reservas/usuario/<int:usuario_id>")
+    @GET("/api/v1/reservas/usuario/{usuario_id}")
+
     Call<List<ReservaInfo>> obtenerReservasPorUsuario(@Header("Authorization") String token, @Path("usuario_id") int usuarioId);
-    @GET("/obtener_productos")
+    @GET("/api/v1/productos")
     Call<List<Producto>> obtenerProductos(@Header("Authorization") String token);
 
-    @GET("/obtener_carritos")
+    @GET("/api/v1/carritos")
     Call<List<Carrito>> obtenerCarritos(@Header("Authorization") String token);
 
-    @PUT("carritos/{carritoId}")
+    @PUT("/api/carritos/{carrito_id}")
     Call<Void> actualizarCarrito(@Path("carritoId") int carritoId, @Body Carrito carrito);
 
-    @DELETE("carritos/{carritoId}")
+    @DELETE("/api/v1/carritos/<int:id>")
     Call<Void> eliminarCarrito(String s, @Path("carritoId") int carritoId);
 
 
